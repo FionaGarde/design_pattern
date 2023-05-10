@@ -26,19 +26,19 @@ class StripeRoad{
 }
 
 class StripAdapter implements Car{
-	private $stripRoad;
+	private $stripeRoad;
 
-	public function __construct(StripeRoad $stripRoad){
-		$this->stripRoad = $stripRoad;
+	public function __construct(StripeRoad $stripeRoad){
+		$this->stripeRoad = $stripeRoad;
 	}
 
 	public function kilometrage($km){
-		$this->stripRoad->length($km);
+		$this->stripeRoad->length($km);
 	}
 }
 
-$stripRoad = new stripRoad();
-$stripRoad = new StripAdapter($stripRoad);
-$stripRoad->kilometrage(50);
+$stripeRoad = new stripeRoad();
+$stripeRoad = new StripAdapter($stripeRoad);
+$stripeRoad->kilometrage(50);
 
 ?>
